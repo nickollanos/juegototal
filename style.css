@@ -1,0 +1,215 @@
+/* le ponemos el estilo a las figuras paara ataque y defensa*/
+div img{
+    width: 10%;
+}
+div {
+ font-size: 5em;}
+div img:hover{
+    width: 8%;
+    motion: rotation 120grad;
+}
+/* le ponemos el estilo al body principal*/
+.bodyp{
+    background-image:url(img/fondo\ 1.jpg);
+    background-size: 100%;
+    justify-content: center;
+}
+
+/* le ponemos el estilo al body donde se desarrolla el juego*/
+.bodys{
+    background-image: url(img/fondo\ 2.jpg);
+    justify-content: center;
+    background-size: 100%;
+}
+
+/* le ponemos el estilo al titulo de la pagina principal*/
+#titulo1{
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    width: 3500px;
+    color: #99eaf0;
+    font-family:cursive;
+}
+
+/* le ponemos el estilo al boton de la pagina principal*/
+#boton1{
+    position: absolute;
+    top: 1800px;
+    left: 1900px;
+    width: 350px;
+    background-color: #e01818;
+    font-size: 80px;
+
+}
+
+/* le ponemos el estilo al div que contiene la imagen del enemigo*/
+#enemigo{
+    position: absolute;
+    top: 1500px;
+    left: 3500px;
+    width: 350px;
+}
+
+/* le ponemos el estilo al div que contiene la imagen del jugador principal*/
+#yo{
+    position: absolute;
+    top: 30px;
+    left: 650px;
+    width: 350px;
+}
+
+/* le ponemos el estilo al tamaño de la imagen del enemigo*/
+#dartz{
+    width: 450px;
+    height: 450px;
+}
+
+/* le ponemos el estilo al tamaño de la imagen del jugador principal*/
+#yugi{
+    width: 350px;
+    height: 450px;
+}
+
+/* le ponemos el estilo a la caja de texto que almacena el mensaje de ataque o defensa*/
+#mensaje{
+    position: absolute;
+    top: 1000px;
+    left: 800px;
+    width: 2500px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #2ec442;
+    background-color: rgb(203, 228, 61);
+}
+
+/* le ponemos el estilo al boton que puede reiniciar el juego */
+#boton4{
+    position: absolute;
+    top: 1800px;
+    left: 1900px;
+    width: 350px;
+    font-size: 50px;
+}
+
+/* le ponemos el estilo a la caja de texto que almacena el mensaje del perdedor*/
+#perdedor{
+    position: absolute;
+    top: 1000px;
+    left: 800px;
+    width: 2500px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #2ec442;
+    background-color: rgb(236, 234, 102);
+    font-size: 40px;
+}
+
+/* le ponemos el estilo a la caja de texto que almacena el mensaje del ganador*/
+#ganador{
+    position: absolute;
+    top: 1000px;
+    left: 800px;
+    width: 2500px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #2ec442;
+    background-color: rgb(236, 234, 102);
+    font-size: 40px;
+}
+
+/* desde esta linea hasta la 142 le damos estilo a las barras de salud de los personajes para que se reprersente se resta en pantalla*/
+.bar{
+    background-color: #0e2397;
+    padding: 10px;
+}
+
+.bar-container{
+    width: 95%;
+    height: 20px;
+    border: 1px solid #11e9f0;
+    overflow: hidden;
+}
+
+.bar{
+    background-color: rgb(16, 161, 11);
+    transition: width 0.3s ease;
+}
+
+.bar.red{
+    background-color: red;
+}
+
+/*en estos ultimos le damos estilos a la iomagen de yugi oh de la pagina principal*/
+#letrero{
+    position: absolute;
+    top: 900px;
+    left: 1500px;
+    width: 2500px;
+}
+
+#letrero1{
+    width: 1050px;
+    height: 450px;
+}
+
+/* en estos estilos configuramos el item que nos indica el ataque del jugador*/
+#ataquea{
+    position: absolute;
+    top: 1350px;
+    left: 550px;
+    width: 450px;
+    font-size: 150px;
+    color: #d3fc64;
+}
+
+#ataqueb{
+    width: 650px;
+    height: 350px;
+}
+
+/* en estos estilos configuramos el item que nos indica la defensa del jugador*/
+#defensaa{
+    position: absolute;
+    top: 1350px;
+    left: 550px;
+    width: 450px;
+    font-size: 150px;
+    color: #d3fc64;
+}
+
+#defensab{
+    width: 650px;
+    height: 350px;
+}
+
+/* en estos estilos configuramos el item que nos indica la defensa del enemigo*/
+#defensac{
+    position: absolute;
+    top: 200px;
+    left: 3350px;
+    width: 450px;
+    font-size: 150px;
+    color: #e64225;
+}
+
+#defensad{
+    width: 650px;
+    height: 350px;
+}
+
+/* en estos estilos configuramos el item que nos indica la ataque del enemigo*/
+#ataquec{
+    position: absolute;
+    top: 200px;
+    left: 3350px;
+    width: 450px;
+    font-size: 150px;
+    color: #f33919;
+}
+
+#ataqued{
+    width: 650px;
+    height: 350px;
+}

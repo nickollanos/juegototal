@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css"> 
+    <script src="juego.js"></script>
+    <title>Document</title>
+</head>
+<body class="bodys">
+    <!--en este espacio vamos a imprimir en pantalla los eventos que ocurren a medida que el juego se ejecuta-->
+    <div id="mensaje" style="display: none;">
+
+    </div>
+    <!-- en esta parte ponemos en pantalla la imagen predeterminada del jugador y el div para la barra de salud -->
+    <div id="yo">
+
+    <div class="bar-container">
+    <div class="bar" id="vidayo"></div>
+    </div>
+
+    <img id="yugi" src="img/yugimoto.png" alt="">
+    </div>
+
+    <!-- en este div generamos los elementos que van a interactuar en pantalla para realizar un ataque tambien contiene dos botones de consulta-->
+    <div id="jugador1">
+        
+        <div id="ataque1" onclick="ataqueEnemigo(10,'el mago oscuro'), cambiarTurno();"><img src="img/magooscuro2.png" alt=""></div>
+        <div id="ataque2" onclick="ataqueEnemigo(20,'el dragon de ojos azules'), cambiarTurno();"><img src="img/dragonazul.png" alt=""></div>
+        <div id="ataque3" onclick="ataqueEnemigo(30,'exodia'), cambiarTurno();"><img src="img/exodia.png" alt=""></div>
+
+        <div id="ataquea">
+            <img id="ataqueb" src="img/ataque.gif" alt="">
+            ATAQUE
+        </div>
+
+        <div id="defensac">
+            <img id="defensad" src="img/defensa2.gif" alt="">
+            DEFENSA
+        </div>
+    </div>
+    <!-- en esta parte ponemos en pantalla la imagen predeterminada del enemigo y el div para la barra de salud -->
+    <div id="enemigo">
+
+    <div class="bar-container">
+    <div class="bar" id="vidaenemigo"></div>
+    </div>
+
+    <img id="dartz" src="img/dartzenemigo.webp" alt="">
+    </div>
+
+    <!-- en este div generamos los elementos que van a interactuar en pantalla para realizar una defensa tambien contiene dos botones de consulta-->
+    <div id="jugador2" style="display: none;">
+        
+        <div id="defensa1" onclick="escudoDefensor(10,'el muro de sombras'), cambiarTurno();"><img src="img/murodesombra.webp" alt=""></div>
+        <div id="defensa2" onclick="escudoDefensor(20,'shongun'), cambiarTurno();"><img src="img/Shogun.png" alt=""></div>
+        <div id="defensa3" onclick="escudoDefensor(30,'el divino arsenal'), cambiarTurno();"><img src="img/divinoarsenal.png" alt=""></div>
+
+        <div id="defensaa">
+            <img id="defensab" src="img/defensa.gif" alt="">
+            DEFENSA
+        </div>
+
+        <div id="ataquec">
+            <img id="ataqued" src="img/ataque2.gif" alt="">
+            ATAQUE
+        </div>
+    </div>
+
+    <!-- en este div como tal generamos en pantalla la finalizacion del juego y mostramos en pantalla cuando el jugador pierda-->
+    <div>
+    <div id="perdedor" style="display: none;">
+            LO SENTIMOS HAS PERDIDO  TU ENEMIGO HA GANADO BUENA SUERTE A LA PROXIMA GUERRERO
+    </div>
+    <button id="boton4"><a href="index.html">REINICIAR JUEGO</a></button>
+    </div>
+    <!-- en este div como tal generamos en pantalla la finalizacion del juego y mostramos en pantalla cuando el jugador gane-->
+    <div id="ganador" style="display: none;">
+            EXCELENTE HAS GANADO ERES EL MEJOR
+            <button id="boton4"><a href="index.html">REINICIAR JUEGO</a></button>
+    </div>
+</body>
+</html>
+<!--ataqueEnemigo,2000,-->

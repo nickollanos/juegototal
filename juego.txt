@@ -1,0 +1,44 @@
+index
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=inp, initial-scale=1.0">
+    <title>Document</title>
+    <script src="juego.js"></script>
+</head>
+<body>
+    <button onclick="ataqueEnemigo(10,'Ataque de agua');">ATAQUE-1</button>
+    <button onclick="ataqueEnemigo(20,'Ataque de electrico');">ATAQUE-2</ATAQUE-2></button>
+    <button onclick="ataqueEnemigo(30,'Ataque de fuego');">ATAQUE-3</button>
+    <button onclick="bebePocion(10,'pocion verde');">POCION-1</button>
+    <button onclick="bebePocion(20,'pocion azul');">POCION-2</button>
+    <button onclick="bebePocion(30,'pocion rojo');">POCION-3</button>
+    <button onclick="totalVida();">MUESTRA VIDA</button>
+</body>
+</html>
+js
+var vida = 100;
+var ataque = 10;
+var pocion = 20;
+
+function totalVida(){
+    console.log("tu vida es: "+vida)
+}
+
+function muestraVida(nombre,accion){
+    console.log("Ha sido "+accion+" con: "+nombre) 
+    console.log("tu vida es: "+vida)
+    
+}
+
+function ataqueEnemigo(potencia,nombreAtaque){
+    vida -= potencia;
+    muestraVida(nombreAtaque,"atacado");
+}
+
+function bebePocion(potencia,nombrePosion){
+    vida += potencia;
+    muestraVida(nombrePosion,"curado");
+}
