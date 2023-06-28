@@ -17,7 +17,7 @@ div img:hover{
     
 
 /* le ponemos el estilo al body donde se desarrolla el juego*/
-body{
+.bodys{
     background-image:url(img/fondo2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -38,7 +38,7 @@ body{
 /* le ponemos el estilo al boton de la pagina principal*/
 #boton1{
     position: absolute;
-    top: 550px;
+    top: 800px;
     left: 800px;
     width: 150px;
     background-color: #e01818;
@@ -70,8 +70,7 @@ body{
 
 /* le ponemos el estilo al tamaño de la imagen del jugador principal*/
 #yugi{
-    width: 200px;
-    height: 200px;
+    width: 2em;
 }
 
 /* le ponemos el estilo a la caja de texto que almacena el mensaje de ataque o defensa*/
@@ -137,6 +136,7 @@ body{
 
 .bar{
     background-color: rgb(16, 161, 11);
+    height: 20px;
     transition: width 0.3s ease;
 }
 
@@ -218,9 +218,10 @@ body{
     height: 175px;
 }
 
+/* en estos estilos configuramos el item que nos indica quien creo el juego en la pagina principal*/
 #create{
     position: absolute;
-    top: 650px;
+    top: 700px;
     left: 100px;
     width: 350px;
     font-size: 30px;
@@ -238,4 +239,35 @@ body{
     width: 1100px;
     height: 800px;
     font-size: 35px;
+}
+
+/* en estos estilos configuramos el item que nos indica el numero de la ficha*/
+#ficha{
+    position: absolute;
+    top: 750px;
+    left: 100px;
+    width: 350px;
+    font-size: 30px;
+    color: #bccf11;
+    border-color: #161927;
+    border-radius: 10px;
+}
+
+/* en estos estilos configuramos el porcentaje que se muestra en las barras de vida de los jugadores*/
+#vidaenemigo{
+    left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(14, 29, 245);
+    padding-top: 1px;
+    font-family: cursive;
+}
+
+#vidayo{
+    left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(37, 40, 221);
+    padding-top: 1px;
+    font-family: cursive; 
 }
